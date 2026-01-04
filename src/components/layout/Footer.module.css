@@ -1,0 +1,111 @@
+.footer {
+    background-color: var(--color-primary);
+    /* Midnight Blue */
+    color: white;
+    padding: 4rem 0 2rem;
+    margin-top: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+.brandCol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.description {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    max-width: 300px;
+    font-size: 0.95rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.socialIcon:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.col h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--color-accent);
+}
+
+.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
